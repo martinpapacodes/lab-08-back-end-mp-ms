@@ -125,9 +125,5 @@ app.get('/weather', getWeather);
 
 app.get('/events', getEventBrite);
 
-app.listen(PORT, () => {
-  console.log(`listening on ${PORT}`);
-});
-
 
 client.connect().then(() => {app.listen(PORT, () => console.log(`The server is up listening on ${PORT}`));});
